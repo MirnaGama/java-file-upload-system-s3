@@ -28,7 +28,7 @@ public class StorageConfig {
     private String secretKey;
 
     @Bean
-    @Profile("local")
+    @Profile({"local", "test"})
     public StorageStrategy minioStrategy() {
         return new MinioStrategy(MinioClient.builder()
         .endpoint(endpoint)

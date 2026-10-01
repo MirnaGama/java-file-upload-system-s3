@@ -13,7 +13,7 @@ import org.springframework.web.multipart.MultipartFile;
 import com.mirna.upload_file_system_s3.file.service.FileService;
 
 @RestController
-@RequestMapping("images")
+@RequestMapping("files")
 public class FileController {
 
     @Autowired
